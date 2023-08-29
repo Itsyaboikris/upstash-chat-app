@@ -3,7 +3,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import io, { Socket } from "socket.io-client";
 
-const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || "ws://127.0.0.1:3001";
+const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || "ws://127.0.0.1";
 
 const CONNECTION_COUNT_UPDATED_CHANNEL = "chat:connection-count-updated";
 const NEW_MESSAGE_CHANNEL = "chat:new-message";
